@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+
+    /* z-index indicate how much above or below an element should by default it is 0  */
+    .blue-box{
+      background-color: blue;
+      width: 500px;
+      height: 300px;
+      top: 200px;
+      left: 200px;
+      position: relative;
+    }
+    .red-circle{
+      background-color: red;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      top: 150px;
+      left: 250px;
+      position : absolute
+    }
+  </style>
+</head>
+
+<body>
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

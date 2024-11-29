@@ -1,0 +1,28 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* Write your CSS below, don't change the rules above. */
+p{
+  color: red;
+}
+
+/* Class selector */
+.note{
+  font-size: 20px;
+}
+/* ID Selector */
+#id-selector-demo{
+  color: green;
+}
+/* Selector with attribute the tags that have this attribute with that value are selected */
+li[value="4"]{
+  color: blue;
+}
+
+/*Universal selector selects all the tags where the css file in imbedded*/
+*{
+  text-align: center;
+}

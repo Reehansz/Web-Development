@@ -1,0 +1,28 @@
+/* Write your code here: */
+/* this below is for multiple grps it selects and add the css for both u can
+have a class id or anything separated by ',' */
+h1,h2{
+    color: blueviolet;
+}
+
+/* The below is the parent child configuration one decendant only */
+.box > p{
+    color: firebrick;
+}
+/* div > .done{
+    color: firebrick;
+}  this will also work*/ 
+
+.box .list {
+    color: blue;
+}
+
+/* The below os the chaining selectors no space, start with the tag */
+
+li.done{
+    color: green;
+}
+
+ul p.done{
+    font-size: 0.5rem;
+}

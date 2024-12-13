@@ -1,4 +1,3 @@
-// Use prompt to take input
-var myName = "Reehan";
-var yrName = sys.prompt("What is your name : ");
-console.log("Hey Whats up " + yrName);
+var myName = "ABC"
+console.log(myName)
+console.log("Number of characters is : " + myName.length)

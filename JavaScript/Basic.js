@@ -110,6 +110,50 @@ function fibonacciGenerator (n) {
     return fibonacci
 }
     
-var num = 700;
+var num = 7;
 var fibo = fibonacciGenerator(num);
 console.log(fibo)
+
+//Calculator 
+function add(num1, num2){
+    return num1 + num2;
+}
+function subtract(num1, num2){
+    return num1 - num2;
+}
+function multiply(num1, num2){
+    return num1 * num2;
+}
+function divide(num1, num2){
+    return num1 / num2;
+}
+function calculator(num1, num2, operator){
+    return operator(num1, num2);
+}
+
+console.log(calculator(4, 5, multiply));
+// we can use debugger before any code or functions to see its execution and debug the code example
+//debugger
+//calculator(4, 5, add);
+
+
+//constructing an object
+//first letter caps, called using new key word to initialize the object
+function Housekeeper(name, age, yearOfExperience, languages){
+    this.name = name;
+    this.age = age;
+    this.yearOfExperience = yearOfExperience;
+    this.languages = languages;
+    //methods
+    this.clean = function () {
+        console.log("Cleaning in progress...");
+    }
+    this.greet = function () {
+        console.log("Hi I am "+ this.name);
+    }
+}
+var houseKeeper1 = new Housekeeper("Alisa", 19, 2, ["English", "French"]);
+var housekeeper2 = new Housekeeper("Bob", 25, 4, ["English", "French"]);
+houseKeeper1.clean();
+houseKeeper1.greet();
+housekeeper2.greet();

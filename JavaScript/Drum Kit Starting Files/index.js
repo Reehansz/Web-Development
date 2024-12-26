@@ -1,4 +1,4 @@
-var character = document.querySelectorAll(".drum");
+//var character = document.querySelectorAll(".drum");
 // character.forEach(item => {
 //     item.addEventListener("click",function (){
 //         var w = new Audio('./sounds/tom-1.mp3');
@@ -8,9 +8,21 @@ var character = document.querySelectorAll(".drum");
 // }
 // )
 
+var elements = document.querySelectorAll(".drum");
+for (var i=0; i< elements.length; i++){
+    elements[i].addEventListener("click", function (){
+        var buttonPressed = this.innerText ; // this refer to the element or the object the event is being taking place
+        var url = getAudioUrl(buttonPressed);
+        var audio = new Audio(url);
+        audio.play();
+        addAnimation(buttonPressed);
+
+    })
+}
 document.addEventListener("keydown", function(event) {
     var keyPressed = event.key.toLowerCase();
     playSound(keyPressed);
+    addAnimation(keyPressed);
 
 });
 
@@ -33,4 +45,11 @@ function getAudioUrl(key) {
         case "l": return "./sounds/snare.mp3";
         default: return null;
     }
+}
+
+function addAnimation(button){
+    document.querySelector("." + button).classList.add("pressed")
+    setTimeout(function (){
+        document.querySelector("." + button).classList.remove("pressed");
+    }, 500);
 }

@@ -1,0 +1,21 @@
+.container{
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.container button{
+    min-width: 300px;
+}
+
+.bigger-font{
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+}
+
+.addMargin{
+    margin: 10px;
+}

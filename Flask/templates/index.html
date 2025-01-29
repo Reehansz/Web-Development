@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Score Form</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Your Scores</h1>
+        <form action="/submit" method="post">
+            <label for="cs">Computer Science:</label>
+            <input type="number" id="cs" name="cs" required><br><br>
+            
+            <label for="math">Math:</label>
+            <input type="number" id="math" name="math" required><br><br>
+            
+            <label for="english">English:</label>
+            <input type="number" id="english" name="english" required><br><br>
+            
+            <label for="data_science">Data Science:</label>
+            <input type="number" id="data_science" name="data_science" required><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
